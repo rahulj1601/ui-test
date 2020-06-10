@@ -29,9 +29,17 @@ Following on from Task A, you now have to make the webpage responsive using pure
 
 You will be assessed on how well your responsive webpage is designed.
 
-## Task C
+## Task C1 (UI Design)
 
-Finally, using HTML, CSS & JavaScript, make the webpage interactive by adding a simple modal window of your own design. See `/src/task-c.png`. The UX flow is as follows:
+For candidates who prefer UI design over JavaScript, design a UI of a modal window that would appear when a user clicks on an item in the list. The modal UI should contain more information of your own choosing for each item, potentially with icons next to each type of data/info, and must also include a 'Buy Now' button. See `/src/task-c.png`.
+
+You're welcome to use any graphics editor you wish. Export your image as a PNG or JPEG file and place it in the `/src/` directory.
+
+You will be assessed on the design of your modal window.
+
+## Task C2 (JavaScript)
+
+For candidates comfortable with JS, using HTML, CSS & JavaScript, make the webpage interactive by adding a simple modal window of your own design. See `/src/task-c.png`. The UX flow is as follows:
 
 1. User clicks on an item in the list
 1. Modal window is shown with the item's title, image, description and price, including a 'Buy Now' button
