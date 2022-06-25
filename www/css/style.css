@@ -1,0 +1,429 @@
+body {
+    margin: 0 auto;
+    background-color: #FFF7E6;
+    width: 100%;
+}
+
+/* Navigation Bar */
+
+.navbarContainer {
+    border-top: 3px solid #FCD51E;
+    width:100%;
+}
+
+.topSegment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    
+    width:100%;
+    background-color: #FFBB36;
+    min-height:70px;
+}
+
+.topSegment p {
+    color: white;
+    text-shadow: 2px 2px #DEA32E;
+    font-size: 20px;
+}
+
+.bottomSegment {
+    min-height: 50px;
+    background-color: #FFF7E6;
+}
+
+.bottomSegment img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -45px;
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.navbarText:nth-of-type(1){
+    font-family: "Gotham-Bold";
+}
+
+.navbarText:nth-of-type(2){
+    font-family: "Gotham-XLight";
+}
+
+/* Page Title and Lines on L/R of Page Title */
+
+.pageContainer {
+    background-color: #FFF7E6;
+    width:100%;
+    height:100%;
+    padding-bottom: 100px;
+}
+
+#pageTitle {
+    padding: 0px 0 15px 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Gotham-Book";
+    font-size: 22px;
+    color: #7A766E;
+}
+
+#pageTitle span {
+    display: inline-block;
+    position: relative;  
+}
+
+#pageTitle span:before,
+#pageTitle span:after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid #efe8d8;
+    top: 11px;
+}
+
+#pageTitle span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+#pageTitle span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/* Defining fruit box styling */
+
+.fruitContainer {
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.fruitBox {
+    display: grid;
+    width:80%;
+    background-color: white;
+    margin:15px auto;
+    box-shadow: 7px 7px #EDE6D6;
+    border-radius: 8px;
+    align-items: center;
+    position: relative;
+}
+
+.fruitBox img {
+    margin: 0 auto;
+}
+
+.fruitDescription {
+    margin: 0 0 20 0;
+    font-family: "Gotham-Book";
+    color:#777777;
+    padding: 0 30px 0 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.fruitHeading {
+    display: flex;
+    text-align: center;
+    font-family: "Gotham-Light";
+    color: #B6B6B6;
+    font-size: 20px;
+}
+
+.fruitPrice {
+    background: #8CCC4E;
+    color:white;
+    padding: 10px 20px 10px 40px;
+    font-family: "Gotham-Thin";
+    text-shadow: 2px 2px #78B043;
+    font-size: 20px;
+    margin-right: -3px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+}
+
+.bold {
+    font-family: "Gotham-Medium";
+    color: #454545;
+}
+
+.price {
+    font-family: "Gotham-Bold";
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+
+    z-index: 2;
+    margin: 0 auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    overflow: auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.modalContainer {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.modalContent {
+    display: grid;
+    background-color: white;
+    margin:15px auto;
+    border-radius: 8px;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    border: 1px solid #FFBB36;
+}
+
+.is-blurred {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.dimmer {
+    display: none;
+    background: #000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#buyButton {
+    display: flex;
+    font-family: "Gotham-Book";
+    background-color: white;
+    color: #FFBB36;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    padding:5px 20px;
+    border: 1px solid #FFBB36;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+#buyButton p {
+    margin: 0;
+    align-items: center;
+}
+
+#buyButton:hover {
+    background-color: #FFBB36;
+    color: white;
+}
+
+.modalContent img {
+    margin: 0 auto;
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.fruitModalDescription {
+    margin: 0 auto;
+    font-family: "Gotham-Book";
+    color:white;
+    padding: 0px 30px 20px 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #FFBB36;
+    border-radius: 0 0 7px 7px;
+}
+
+.fruitModalHeading {
+    display: flex;
+    text-align: center;
+    font-family: "Gotham-Light";
+    color: #B6B6B6;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.fruitModalPrice {
+    background: #FFBB36;
+    color:white;
+    padding: 20px 20px 10px 20px;
+    font-family: "Gotham-Thin";
+    text-shadow: 2px 2px #DEA32E;
+    font-size: 20px;
+    margin: 10 0 0 0;
+    border-bottom: 3px solid #FFBB36;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (min-width: 768px){
+    .navbarText:nth-of-type(1){
+        margin-left:20px;
+        float:left;
+        font-family:Gotham-Bold;
+    }
+
+    .navbarText:nth-of-type(2){
+        margin-right:20px;
+        float:right;
+        font-family:Gotham-XLight;
+    }
+
+    #pageTitle span:before,
+    #pageTitle span:after {
+        width: 30vw;
+    }
+
+    .fruitHeading {
+        grid-column: 3 / 6;
+        grid-row: 1 / 2;
+    }
+
+    .fruitDescription {
+        grid-column: 3 / 6;
+        grid-row: 2 / 3;
+    }
+    
+    .fruitPrice {
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+    }
+
+    .fruitBox img {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+    .modal {
+        max-width:80%;
+        max-height:80%;
+    }
+
+    .modalContent {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 768px){
+    .topSegment{
+        padding-bottom: 50px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .navbarText {
+        align-self: center;
+        margin:5px;
+    }
+
+    #pageTitle span:before,
+    #pageTitle span:after {
+        width: 20vw;
+    }
+
+    .fruitHeading {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-left: 10px;
+    }
+
+    .fruitDescription {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        text-align: center;
+    }
+    
+    .fruitPrice {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .fruitBox img {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .modal {
+        width:80%;
+        max-height:80%;
+    }
+
+    .modalContent {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .topSegment{
+        padding-bottom: 50px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .navbarText {
+        align-self: center;
+        margin:5px;
+    }
+
+    #pageTitle span:before,
+    #pageTitle span:after {
+        width: 20vw;
+    }
+    
+    .fruitHeading {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 0 auto;
+    }
+
+    .fruitDescription {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .fruitPrice {
+        position: absolute;
+        top: 0;
+        right: 0; 
+        font-size: 15px;
+        padding: 5px 5px 5px 20px;
+        width: 50px;
+    }
+
+    .fruitBox img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .modal {
+        width:80%;
+        max-height:80%;
+    }
+
+    .modalContent {
+        width: 100%;
+    }
+}

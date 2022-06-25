@@ -4,11 +4,101 @@
         <meta name="viewport" content="width=device-width" />
         <link type='text/css' rel='stylesheet' href='css/fonts.css'>
         <link type='text/css' rel='stylesheet' href='css/style.css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="js/jquery-3.6.0.js"></script>
         <script type='text/javascript' src='js/script.js'></script>
     </head>
     <body>
 
+        <div class="navbarContainer">
 
+            <div class="topSegment">
+                <p class="navbarText">
+                    IndeFruit
+                </p>
+                <p class="navbarText">
+                    Only The Best For Summer
+                </p>
+            </div>
+
+            <div class="bottomSegment">
+                <img src="./img/logo.png">
+            </div>
+
+        </div>
+        
+        <div class="pageContainer">
+            <p id="pageTitle"><span>TOP FRUITS</span></p>
+
+            <div class="fruitContainer">
+
+                <div class="fruitBox">
+                    <img src="./img/mangoes.png">
+                    <p class="fruitHeading">
+                        <span class="bold">Mangoes&nbsp;</span> from India
+                    </p>
+                    <p class="fruitPrice">
+                        <span class="price">£0.50</span> each
+                    </p>
+                    <p class="fruitDescription">
+                        A mango is a juicy stone fruit (drupe) produced from numerous species of 
+                        tropical trees belonging to the flowering plant genus Magifera, cultivated 
+                        mostly for their edible fruit.
+                    </p>
+                </div>
+
+                <div class="fruitBox">
+                    <img src="./img/strawberries.png">
+                    <p class="fruitHeading">
+                        <span class="bold">Strawberries&nbsp;</span> from Spain
+                    </p>
+                    <p class="fruitPrice">
+                        <span class="price">£0.20</span> each
+                    </p>
+                    <p class="fruitDescription">
+                        This fruit is widely appreciated for its characteristic aroma, bright red color, 
+                        juicy texture, and sweetness. It is consumed in large quantities and popular 
+                        in jam, juice, pies & ice cream.
+                    </p>
+                </div>
+
+                <div class="fruitBox">
+                    <img src="./img/guavas.png">
+                    <p class="fruitHeading">
+                        <span class="bold">Guavas&nbsp;</span> from Guatemala
+                    </p>
+                    <p class="fruitPrice">
+                        <span class="price">£0.40</span> each
+                    </p>
+                    <p class="fruitDescription">
+                        Guavas are a common tropical fruit cultivated in many tropical and subtropical 
+                        regions, originating from an area thought to extend from Mexico or Central America.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="dimmer"></div>
+
+        <div id="buyModal" class="modal">
+            <div class="modalContainer">
+
+                <div class="modalContent">
+                    <img id="modalImage">
+                    <p id="modalHeading" class="fruitModalHeading"></p>
+                    <p id="modalPrice" class="fruitModalPrice"></p>
+                    <p id="modalDescription" class="fruitModalDescription"></p>
+                </div>
+
+                <button id="buyButton">
+                    <span class="material-symbols-outlined icon">shopping_cart</span>
+                    <p>Buy Now</p>
+                </button>
+
+            </div>
+        </div>
 
     </body>
 </html>
